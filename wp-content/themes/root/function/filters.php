@@ -26,7 +26,7 @@ function hero_remove_default_image_sizes( $sizes) {
 add_filter('nav_menu_css_class', 'fillter_class_submenu', 10, 4);
 function fillter_class_submenu( $classes, $item, $args ) {
     $number = count($classes);
-    for ($i = 0; $i< $number; $i++){
+    for ($i = 1; $i< $number; $i++){
         if($classes[$i] == 'menu-item-has-children'){
             $classes[$i] = 'dropdown';
         }
