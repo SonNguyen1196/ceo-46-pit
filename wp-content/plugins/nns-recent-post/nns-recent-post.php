@@ -92,7 +92,7 @@ if (!class_exists('NNS_Recent_Post')) {
 
             <?php
 
-            echo $args['after_widget'];
+            echo $args['after_widget'];;
         }
 
     }

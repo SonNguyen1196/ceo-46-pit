@@ -21,7 +21,7 @@ if (!class_exists('InstaGram_Setting')) {
 
 		
 		function instagram_admin_setting(){
-			$fields_setting_values = ['name-instargram-field', 'title-page-gallary', 'access-token-field'];
+			$fields_setting_values = ['name-instargram-field', 'title-page-gallary', 'access-token-field','permalink-page-gallary'];
 
 			foreach ($fields_setting_values as $field) {
 				register_setting( 'instagram_admin_setting', $field);

@@ -1,0 +1,73 @@
+.btn:focus, .btn:active, button:focus, button:active {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+	display: block;
+}
+.my-custom-modal{
+	width: 600px !important;
+}
+#show-next-image{
+	position: absolute;
+    right: 0;
+    top: 40%;
+    background: transparent;
+    font-size: 77px;
+    color: #fff;
+}
+
+#show-previous-image{
+	position: absolute;
+    left: 0;
+    top: 40%;
+    background: transparent;
+    font-size: 77px;
+    color: #fff;
+}
+.my-custom-modal .modal-body{
+	padding: 0;
+}
+.close-custom-modal{
+	position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;    
+}
+.close-custom-modal .hidden-icon{
+	font-size: 77px;
+    color: #000;
+}
+.title-poup-modal {
+    position: absolute;
+    left: 0;
+    padding: 10px 30px;
+    height: 80px;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #0000007d;
+    visibility: hidden;
+    -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+    transition-delay: 0.2s;
+  	transition: all 0.5s;
+}
+
+.modal-body:hover .title-poup-modal {
+    visibility: visible;
+    transform: translateY(-80px);
+}
+.modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+.my-custom-modal .modal-content {
+	border: none;
+}
